@@ -1,0 +1,19 @@
+HTML elements:
+p
+header
+footer
+a
+title
+div
+table tr td
+h3
+svg
+button
+CSS properties:
+border
+font-size
+letter-spacing
+line-height
+background-color
+javascript for checking value of form and giving message depending on the value
+bootsrap for button

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th>Stock symbol</th>
+                <th>Number of shares</th>
+                <th>Price per share</th>
+                <th>Total Value of transaction</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+                <tr> <!-- Start a new row for each symbol -->
+                    <td>{{ transaction.symbol }}</td>
+                    <td>{{ transaction.shares }}</td>
+                    <td>{{ transaction.price }}.00</td>
+                    <td>{{ transaction.price * transaction.shares}}.00</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

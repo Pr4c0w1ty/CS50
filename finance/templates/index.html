@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th>Stock symbol</th>
+                <th>Number of shares</th>
+                <th>Price per share</th>
+                <th>Total Value of holding</th>
+                <th>Cash balance</th>
+                <th>Total value of account</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for symbol, transaction in grouped_transactions.items() %}
+                <tr> <!-- Start a new row for each symbol -->
+                    <td>{{ transaction.symbol }}</td>
+                    <td>{{ transaction.shares }}</td>
+                    <td>{{ transaction.price }}0</td>
+                    <td>{{ transaction.value }}0</td>
+                    <td>{{ formatted_cash }}</td>
+                    <td>{{ acc_value }}0</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

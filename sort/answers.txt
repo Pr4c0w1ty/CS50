@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: shortest sorting of sorted list
+
+sort2 uses: merge sort
+
+How do you know?: short sorting all list but sort1 was quicker on sorted list
+
+sort3 uses: selection sort
+
+How do you know?: long sorting all lists
